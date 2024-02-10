@@ -1,0 +1,36 @@
+.container {
+  width: 100%;
+  margin-bottom: 20px;
+  border: 1px #000000 solid;
+  border-collapse: collapse;
+  margin-top: 32px;
+}
+
+.th {
+  font-weight: bold;
+  padding: 4px;
+  background: #282828;
+  border: 1px solid #000000;
+  color: #ffffff;
+}
+
+.td {
+  border: 1px solid #000000;
+  padding: 5px;
+}
+
+.tr {
+  color: #000000;
+}
+
+.tr:nth-child(odd) {
+  background: #e3e3e3;
+}
+
+.tr:nth-child(even) {
+  background: #acacac;
+}
+
+.type {
+  text-transform: capitalize;
+}

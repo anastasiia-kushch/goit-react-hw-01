@@ -4,6 +4,8 @@ import { Profile } from './components/Profile/Profile';
 import { userData } from './data/userData';
 import { friends } from './data/friendsData';
 import { FriendList } from './components/FriendList/FriendList';
+import { TransactionHistory } from './components/TransactionHistory/TransactionHistory';
+import { transactions } from './data/transaktions';
 
 
 function App() {
@@ -16,7 +18,10 @@ function App() {
         image={userData.avatar}
         stats={userData.stats}
       />
+      <hr/>
       <FriendList friends={friends} /> 
+      <hr />
+      <TransactionHistory items={transactions}/>
     </>
   );
 }

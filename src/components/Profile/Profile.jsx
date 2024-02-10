@@ -1,27 +1,32 @@
-export const Profile = ({ name, tag, location, image, stats: { followers, views, likes } }) => {
+import styles from '../Profile/Profile.module.css';
+
+export const Profile = ({
+  name,
+  tag,
+  location,
+  image,
+  stats: { followers, views, likes },
+}) => {
   return (
-    <div>
-      <div>
-        <img
-          src={image}
-          alt="User avatar"
-        />
-        <p>{name}</p>
-        <p>{tag}</p>
-        <p>{location}</p>
+    <div className={styles.container}>
+      <div className={styles.avatarCont}>
+        <img className={styles.avatar} src={image} alt="User avatar" />
+        <p className={styles.name}>{name}</p>
+        <p className={styles.summary}>{'@' + tag}</p>
+        <p className={styles.summary}>{location}</p>
       </div>
-      <ul>
-        <li>
+      <ul className={styles.info}>
+        <li className={styles.infoItem}>
           <span>Followers</span>
-          <span>{followers}</span>
+          <span style={{ fontWeight: 800 }}>{followers}</span>
         </li>
-        <li>
+        <li className={styles.infoItem}>
           <span>Views</span>
-          <span>{views}</span>
+          <span style={{ fontWeight: 800 }}>{views}</span>
         </li>
-        <li>
+        <li className={styles.infoItem}>
           <span>Likes</span>
-          <span>{likes}</span>
+          <span style={{ fontWeight: 800 }}>{likes}</span>
         </li>
       </ul>
     </div>
