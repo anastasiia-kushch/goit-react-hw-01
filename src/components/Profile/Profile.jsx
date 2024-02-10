@@ -1,6 +1,4 @@
-import { userData } from "./userData";
-
-export const Profile = ({ name, tag, location, image, stats }) => {
+export const Profile = ({ name, tag, location, image, stats: { followers, views, likes } }) => {
   return (
     <div>
       <div>
@@ -15,15 +13,15 @@ export const Profile = ({ name, tag, location, image, stats }) => {
       <ul>
         <li>
           <span>Followers</span>
-          <span>{stats.followers}</span>
+          <span>{followers}</span>
         </li>
         <li>
           <span>Views</span>
-          <span>{stats.views}</span>
+          <span>{views}</span>
         </li>
         <li>
           <span>Likes</span>
-          <span>{stats.likes}</span>
+          <span>{likes}</span>
         </li>
       </ul>
     </div>
