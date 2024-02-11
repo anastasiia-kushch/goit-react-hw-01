@@ -1,7 +1,7 @@
 import styles from '../Profile/Profile.module.css';
 
-export const Profile = ({
-  name,
+export const Profile = ({    //отримуємо пропси і робимо деструктуризацію
+  name,   
   tag,
   location,
   image,
@@ -32,3 +32,5 @@ export const Profile = ({
     </div>
   );
 };
+
+//повертаємо розмітку, де дані змінюються динамічно 

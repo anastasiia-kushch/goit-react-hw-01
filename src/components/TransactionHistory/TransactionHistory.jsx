@@ -23,3 +23,5 @@ export const TransactionHistory = ({ items }) => {
     </table>
   );
 };
+
+//повертаємо розмітку, де дані змінюються динамічно 

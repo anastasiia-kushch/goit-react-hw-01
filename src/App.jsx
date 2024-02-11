@@ -1,11 +1,10 @@
-import { useState } from 'react';
 import './App.css';
 import { Profile } from './components/Profile/Profile';
 import { userData } from './data/userData';
 import { friends } from './data/friendsData';
 import { FriendList } from './components/FriendList/FriendList';
 import { TransactionHistory } from './components/TransactionHistory/TransactionHistory';
-import { transactions } from './data/transaktions';
+import { transactions } from './data/transaсtions';
 
 
 function App() {
